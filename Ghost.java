@@ -1,9 +1,11 @@
 class Ghost {
-    char name;
+    String name;
     int x, y; // Position on the map
     String color;
+    char symbol
 
-    Ghost(char name, int x, int y, String color) {
+    Ghost(String name, int x, int y, String color,char symbol) {
+        this.symbol = symbol;
         this.name = name;
         this.x = x;
         this.y = y;
