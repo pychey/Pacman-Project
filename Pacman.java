@@ -9,4 +9,5 @@ class Pacman {
         this.y = y;
         this.score = 0;
     }
+
 }

@@ -17,6 +17,21 @@ class Map {
             }
         }
     }
+    void placePacman(int x, int y) {
+        if (isWithinBounds(x, y)) {
+            grid[y][x] = 'P'; // 'P' represents Pacman
+        }
+    }
+
+    void placeGhost(int x, int y, char symbol) {
+        if (isWithinBounds(x, y)) {
+            grid[y][x] = symbol; // Each ghost has a unique symbol
+        }
+    }
+
+    boolean isWithinBounds(int x, int y) {
+        return x >= 0 && x < width && y >= 0 && y < height;
+    }
 
     // Print the map
     void printMap() {
