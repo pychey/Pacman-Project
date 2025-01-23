@@ -1,13 +1,15 @@
 class Pacman {
-    int score;
     String name;
+    int score;
     int x, y; // Position on the map
+    char symbol;
 
-    Pacman(int x, int y) {
+    Pacman(int dx, int dy) {
         name = "Pacman";
-        this.x = x;
-        this.y = y;
-        this.score = 0;
+        x = dx;
+        y = dy;
+        score = 0;
+        symbol = 'P';
     }
 
 }

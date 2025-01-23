@@ -1,14 +1,14 @@
 class Ghost {
     String name;
-    int x, y; // Position on the map
     String color;
-    char symbol
+    int x, y; // Position on the map
+    char symbol;
 
-    Ghost(String name, int x, int y, String color,char symbol) {
-        this.symbol = symbol;
-        this.name = name;
-        this.x = x;
-        this.y = y;
-        this.color = color;
+    Ghost(String ghostName, int dx, int dy, String ghostColor,char ghostSymbol) {
+        name = ghostName;
+        x = dx;
+        y = dy;
+        color = ghostColor;
+        symbol = ghostSymbol;
     }
 }

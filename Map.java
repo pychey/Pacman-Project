@@ -2,9 +2,9 @@ class Map {
     int width, height;
     char[][] grid;
 
-    Map(int width, int height) {
-        this.width = width;
-        this.height = height;
+    Map(int mapWidth, int mapHeight) {
+        width = mapWidth;
+        height = mapHeight;
         grid = new char[height][width];
         initialize();
     }
@@ -28,7 +28,8 @@ class Map {
             grid[y][x] = symbol; // Each ghost has a unique symbol
         }
     }
-
+    
+    //Check if within map
     boolean isWithinBounds(int x, int y) {
         return x >= 0 && x < width && y >= 0 && y < height;
     }

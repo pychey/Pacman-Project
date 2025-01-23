@@ -15,8 +15,8 @@
     void start() {
         System.out.println("\nWelcome to CLI Pacman!");
         map.placePacman(pacman.x, pacman.y);
-        for(int i = 0; i < ghosts.length ; i++){
-            map.placeGhost(ghosts[i].x, ghosts[i].y, ghosts[i].symbol);
+        for(Ghost ghost : ghosts) {
+            map.placeGhost(ghost.x, ghost.y, ghost.symbol);
         }
         map.printMap();
     }
